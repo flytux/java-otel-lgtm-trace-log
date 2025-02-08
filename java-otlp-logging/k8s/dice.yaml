@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: dice
-          image: dice:1.1-SNAPSHOT
+          image: dice:v1
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
