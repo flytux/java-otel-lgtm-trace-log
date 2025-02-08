@@ -1,0 +1,5 @@
+- docker build -t dice:auto .
+- cert-manager 설치
+- operator 설치
+- java-instrument 생성
+- dice-auto.yaml 적용
