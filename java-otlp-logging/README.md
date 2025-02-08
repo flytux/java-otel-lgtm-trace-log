@@ -1,10 +1,8 @@
-# Exporting Application logs using JSON logging in Kubernetes
+# Java Otel Agent to OTLP trace / log
 
-## Running the example
-
-1. Build the Docker image using using `build.sh`
-2. Deploy the manifest using `kubectl apply -f k8s/` (e.g. using [k3d.sh](k3d.sh))
-3. Generate traffic using [generate-traffic.sh](../../../generate-traffic.sh)
-4. Log in to [http://localhost:3000](http://localhost:3000) with user _admin_ and password _admin_.
+1. docker build -t dice:v1 .
+2. kubectl apply -f k8s/dice.yaml
+3. generate traffic
+4. http://grafana.local admin / admin
 5. Go to "Explore"
-6. Select "Loki" as data source
+6. Select "Tempo" trace to Log
