@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goblog
+  labels:
+    app: goblog
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: goblog
+  template:
+    metadata:
+      labels:
+        app: goblog
+    spec:
+      containers:
+        - name: goblog
+          image: mariomac/goblog:dev
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8443
+              name: https
