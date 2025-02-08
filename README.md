@@ -1,7 +1,7 @@
 ### Loki-Grafana-Tempo-Prometheus single node - java opentelemetry sample
 
-![１](./images/pictures/tempo-span-link.png)
-![２](./images/pictures/tempo-loki-trace.png)
+![１](./images/tempo-span-link.png)
+![２](./images/tempo-loki-trace.png)
 
 - LGTM 싱글 노드 서버와 otel collector로 구성된 테스트 서버 구동 (helm chart)
 - spring boot 샘플 서비스에 java otel agent를 구성하여 log/trace 발생 (그라파나 확인)
