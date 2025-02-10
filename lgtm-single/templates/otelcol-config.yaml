@@ -14,14 +14,6 @@ data:
             - job_name: 'opentelemetry-collector'
               static_configs:
                 - targets: [ 'localhost:8888' ]
-      filelog/otlp-json-logs:
-        include:
-          - /var/log/pods/*/*/*.log
-        include_file_path: true
-        operators:
-          - id: container-parser
-            type: container
-
     processors:
       batch:
       resourcedetection:
@@ -62,4 +54,3 @@ data:
 kind: ConfigMap
 metadata:
   name: otelcol-config
-  namespace: lgtm
