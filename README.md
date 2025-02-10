@@ -29,3 +29,10 @@
 - deploy dice:auto applicationh with auto injection annotation
 - generate load with watch curl -vL http://localhost:8080 inside dice-auto pod
 - check grafana trace and log
+
+#### 4. install otel collector kubernetes
+- cd otel-kube
+- install kube-state-metrics
+- install node-exporter
+- install otel-collector with otel-values
+- install grafana dasshboard (https://grafana.com/grafana/dashboards/13332-kube-state-metrics-v2/)
