@@ -1,6 +1,6 @@
 ### Loki-Grafana-Tempo-Prometheus single node - java opentelemetry sample
 
-![１](./images/otel-lgtm-overview.png)
+![１](./images/otel-lgtm-overview-v1.png)
 ---
 ![１](./images/tempo-span-link.png)
 ---
